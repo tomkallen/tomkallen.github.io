@@ -22,8 +22,8 @@ html, body {
     margin: 0;
     letter-spacing: .6rem;
     font-weight: 700;
-    padding-bottom: .7rem;
-    border-bottom: 1px dotted #111;
+    padding-bottom: .1rem;
+    border-bottom: 1px dashed #111;
 }
 
 .product-header b{
@@ -50,6 +50,29 @@ html, body {
 }
 
 .image--cop {
-    width: 120px;
+    width: 100px;
     height: auto;
+}
+
+.description {
+    display: inline-block;
+    max-width: 40%;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.description li {
+    display: inline-block;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 0 .6rem;
+
+}
+
+li:before {
+    content: '☞';
+    margin-right: .4rem;
+    font-size: 1.2rem;
+
 }
