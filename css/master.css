@@ -85,16 +85,25 @@ html, body {
     left: 0;
     top: 0;
     text-align: center;
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: all;
+    transition: all 0.5s;
 }
-.top-menu:hover {
-    background: none;
+.red-menu {
+    background-color: rgba(245, 12, 12, .6);
+    -webkit-transition: all;
+    transition: all 0.5s;
+    text-align: left;
+}
+.top-menu ul {
+    margin: .6rem auto;
 }
 .top-menu li {
     display: inline-block;
+    font-size: 0;
 }
 .top-menu li a {
+    margin: 0;
     text-decoration: none;
     font-family: 'Bungee Shade', cursive;
     color: #333;
@@ -105,10 +114,18 @@ html, body {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.top-menu li a:hover {
-    color: red;
-}
+.red-menu li a {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: .2rem .8rem;
+    font-family: 'Signika', sans-serif;
+    color: #eee;
+    text-shadow: 1px 1px 0 #444;
 
+}
+.top-menu li a:hover {
+    color: white;
+}
 .top-menu li a:active {
     color: green;
 }

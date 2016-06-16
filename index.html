@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Alex B is here</title>
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
         <link rel="stylesheet" href="./css/master.css">
@@ -56,9 +57,17 @@
             <div class="append">&#9672;&#9672;&#9672;
             </div>
         </div>
-        <div class="proto" id="project-one">
-
-        </div>
-
+        <div class="proto" id="project-one"></div>
+        <script>
+            $(window).bind('scroll', function() {
+                if ($(window).scrollTop() > 250) {
+                    $('.top-menu').addClass('red-menu');
+                    // $('.top-menu > li > a').addClass('red-anchor');
+                } else {
+                    $('.top-menu').removeClass('red-menu');
+                    // $('.top-menu > li > a').removeClass('red-anchor');
+                }
+            });
+        </script>
     </body>
 </html>
