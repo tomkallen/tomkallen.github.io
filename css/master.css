@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #222;
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    background: url('../images/confectionary.png') repeat;
+    font-size: 16px;
+}
+.proto {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.product-header {
+    color: #666;
+    font-size: 2.4rem;
+    margin: 0;
+    letter-spacing: .6rem;
+    font-weight: 700;
+    padding-bottom: .7rem;
+    border-bottom: 1px dotted #111;
+}
+
+.product-header b{
+    font-weight: 900;
+    color: #666;
+
+}
+.product-header--lower {
+    color: #333;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+
+.prepend {
+    font-size: 3rem;
+    color: #555;
+}
+
+.append {
+    font-size: 1.3rem;
+    color: #888;
+}
+
+.image--cop {
+    width: 120px;
+    height: auto;
+}
