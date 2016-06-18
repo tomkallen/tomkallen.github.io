@@ -5,7 +5,8 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Signika', sans-serif;
-    background: url('../images/back_01.png') repeat;
+    /*background: url('../images/back_01.png') repeat;*/
+    background-color: rgb(242, 195, 161);
     font-size: 16px;
 }
 .proto {
@@ -90,7 +91,7 @@ html, body {
     transition: all 0.5s;
 }
 .red-menu {
-    background-color: rgba(245, 12, 12, .6);
+    background-color: rgb(8, 63, 105);
     -webkit-transition: all;
     transition: all 0.5s;
     text-align: left;
