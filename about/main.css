@@ -50,7 +50,7 @@ section {
     background-color: #000;
     text-align: center;
 }
-@media all and (max-height: 414px), all  and (orientation:landscape) {
+@media all and (max-height: 399px), all  and (orientation:landscape) {
     .warning {
         display: flex;
         justify-content: center;
