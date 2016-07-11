@@ -27,13 +27,13 @@ section {
     background-color: rgb(6, 64, 93);
 }
 .section--two {
-    background-color: rgb(147, 108, 8);
+    /*background-color: rgb(147, 108, 8);*/
 }
 .text {
     text-align: center;
 }
 .text--leading {
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: rgb(229, 231, 235);
 }
 .text--skills {
