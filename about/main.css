@@ -48,8 +48,9 @@ section {
     width: 100vw;
     height: 100vh;
     background-color: #000;
+    text-align: center;
 }
-@media screen and (orientation:landscape) {
+@media screen and (max-height: 479px)  {
     .warning {
         display: flex;
         justify-content: center;
