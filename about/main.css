@@ -6,6 +6,42 @@ body {
     padding: 0;
 }
 
+@-webkit-keyframes animated {
+    0% {
+        transform: rotateY(20deg) skewY(5deg)
+    }
+    100% {
+        transform: none
+    }
+}
+
+@-moz-keyframes animated {
+    0% {
+        transform: rotateY(20deg) skewY(5deg)
+    }
+    100% {
+        transform: none
+    }
+}
+
+@-o-keyframes animated {
+    0% {
+        transform: rotateY(20deg) skewY(5deg)
+    }
+    100% {
+        transform: none
+    }
+}
+
+@keyframes animated {
+    0% {
+        transform: rotateY(20deg) skewY(5deg)
+    }
+    100% {
+        transform: none
+    }
+}
+
 canvas {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -34,7 +70,6 @@ section {
     background-size: cover;
 }
 
-.section--two {}
 
 .text {
     text-align: center;
@@ -44,8 +79,7 @@ section {
     font-size: 3.8rem;
     color: rgb(229, 231, 235);
     padding: 4em;
-    
-    transform: rotateY(20deg) skewY(5deg);
+    animation: animated 5s infinite alternate;
 }
 
 .text--skills {

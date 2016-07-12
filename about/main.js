@@ -46,5 +46,4 @@ var _array = ["stuff", "websites", "Javascript", "CSS", "webapps", "designs", "M
 setInterval(function() {
     counter === _array.length - 1 ? counter = 0 : counter++;
     span.innerHTML = _array[counter];
-
 }, 1000);
