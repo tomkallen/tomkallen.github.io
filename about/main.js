@@ -34,14 +34,12 @@ var config = {
     }
 };
 var ctx = document.getElementById("myChart").getContext("2d");
-
 var chart = new Chart.PolarArea(ctx, config);
 
 window.onload = function() {
     chart.update();
 };
 
-var navId = 1;
 
 var span = document.getElementById("span");
 var counter = 0;
@@ -59,6 +57,7 @@ function visible(el) {
     return isVisible;
 }
 
+var navId = 1;
 window.addEventListener("keyup", function() {
     event.keyCode === 39 && navId++;
     event.keyCode === 37 && navId--;
