@@ -8,37 +8,37 @@ body {
 
 @-webkit-keyframes animated {
     0% {
-        transform: rotateY(20deg) skewY(5deg)
+        transform: rotateY(20deg) skewY(5deg);
     }
     100% {
-        transform: none
+        transform: none;
     }
 }
 
 @-moz-keyframes animated {
     0% {
-        transform: rotateY(20deg) skewY(5deg)
+        transform: rotateY(20deg) skewY(5deg);
     }
     100% {
-        transform: none
+        transform: none;
     }
 }
 
 @-o-keyframes animated {
     0% {
-        transform: rotateY(20deg) skewY(5deg)
+        transform: rotateY(20deg) skewY(5deg);
     }
     100% {
-        transform: none
+        transform: none;
     }
 }
 
 @keyframes animated {
     0% {
-        transform: rotateY(20deg) skewY(5deg)
+        transform: rotateY(20deg) skewY(5deg);
     }
     100% {
-        transform: none
+        transform: none;
     }
 }
 
