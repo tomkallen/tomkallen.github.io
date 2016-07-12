@@ -107,12 +107,3 @@ section {
         padding: 1em;
     }
 }
-
-
-/*@media only screen and (max-width: 420px) and (orientation: landscape) {
-    .warning {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}*/
