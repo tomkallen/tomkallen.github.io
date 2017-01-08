@@ -1,7 +1,8 @@
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: #fff;
-    background-image: url("./flamingskull.gif")
+    background-image: url("./flamingskull.gif");
+    padding: 4rem;
 }
 
 h1 {
