@@ -1,8 +1,21 @@
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: #fff;
+    padding: 0;
+    background-color: #fff;
+}
+
+.x {
     background-image: url("./flamingskull.gif");
-    padding: 4rem;
+    margin: 0;
+    padding: 2rem;
+    opacity: 1;
+    transition: all 2s linear;
+    width: 130%;
+}
+
+.scrolled {
+    opacity: 0;
 }
 
 h1 {
@@ -11,7 +24,6 @@ h1 {
 
 .content {
     background-color: #333;
-    width: 130%;
     text-align: center;
     color: yellow;
 }
@@ -29,4 +41,19 @@ h1 {
 
 marquee {
     font-size: 2rem;
+}
+
+.zxcv {
+    font-family: 'Kumar One', cursive;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5rem;
+    color: #ccc;
+    z-index: -999;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1rem;
+    /*text-shadow: 1px 1px 2px black;*/
 }
