@@ -2,7 +2,7 @@ body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: #fff;
     padding: 0;
-    background-color: #fff;
+    background-color: #000;
     box-sizing: border-box;
     margin: 0;
     overflow-x: hidden;
@@ -54,7 +54,7 @@ marquee {
     top: 0;
     left: 0;
     display: table;
-    color: #ccc;
+    color: #333;
     z-index: -999;
     text-align: center;
     font-size: 4rem;
