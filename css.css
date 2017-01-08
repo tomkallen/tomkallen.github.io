@@ -26,3 +26,7 @@ h1 {
     width: 260px;
     height: 480px;
 }
+
+marquee {
+    font-size: 2rem;
+}
