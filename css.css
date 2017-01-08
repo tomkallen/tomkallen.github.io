@@ -18,9 +18,10 @@ h1 {
 .img {
     margin: 0 auto;
     text-align: center;
+    color: white;
 }
 
-img {
+.cc {
     width: 260px;
     height: 480px;
 }
