@@ -72,7 +72,6 @@ If you do not want strict typing then omit 'type' argument and it will default t
         <p>Number of cats is all fun and games but what if we want a list of cats' names? To solve this we can utilize some new features<code>data-repeat</code> attribute, <code>subscribe()</code> and <code>binds()</code> methods</p>
         <pre><code class="codebox html">&lt;input type="text" id="catNamesInput"></code></pre>
         <pre><code class="codebox javascript">const catNames = new Watchable("catNames");
-const catNames = new Watchable("catNames");
 const catNamesList = new Watchable("catNamesList");
 catNames.binds("catNamesInput");
 catNames.subscribe("addNames", () => catNamesList.set(catNames.value().split(" ")));
