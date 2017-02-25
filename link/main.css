@@ -3,8 +3,8 @@ body {
     padding: 1rem;
 }
 
-h1,
-h4 {
+h1, h2,
+h4, h5 {
     margin: 0 auto;
     padding: 0 2rem;
     text-align: center;
