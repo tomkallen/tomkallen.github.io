@@ -5,13 +5,16 @@
         <meta charset="UTF-8">
         <title>Document</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-light.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
         <link rel="stylesheet" href="main.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
         <script>
             hljs.initHighlightingOnLoad();
         </script>
+        <script src="js/main.bundle.js"></script>
+
     </head>
+
 
     <body>
         <h1>Short Yet Comprehensive Guide To Link,</h1>
@@ -48,16 +51,31 @@ catCounter.set(3);</code></pre>
         <p>HTML</p>
         <pre>
 <code class="codebox html">&lt;p>Frankly speaking I have &lt;span data-watchable="counter">&lt;/span> cats!&lt;/p>
-&lt;button onClick="addCats">Add more cats&lt;/button>
+&lt;button onClick="addCats()">Add more cats&lt;/button>
 </code></pre>
         <p>JS</p>
         <pre><code class="codebox javascript">const catCounter = new Watchable("counter", {value: 3, type: "number"});
-const addCats = function() {
-  catCounter.set(catCounter.value() + 1);
-}</code></pre>
+const addCats = () => catCounter.set(catCounter.value() + 1);</code></pre>
+        <p>Try it yourself!</p>
+        <div class="result">
+            <p>Frankly speaking i have <span data-watchable="counter"></span> cats!</p>
+            <button type="button" onclick="addCats()">Add more cats</button>
+        </div>
+        <p>See? Even the value in the previous paragraph has changed!</p>
 
 
 
+
+
+        <script type="text/javascript">
+            var catCounter = new Watchable("counter", {
+                value: 3
+            });
+
+            function addCats() {
+                return catCounter.set(catCounter.value() + 1)
+            }
+        </script>
     </body>
 
 </html>
