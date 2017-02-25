@@ -69,7 +69,7 @@ If you do not want strict typing then omit 'type' argument and it will default t
             the constructor.
         </p>
         <h3>5. Going further</h3>
-        <p>Number of cats is all fun and games but what if we want a list of cats' names? To solve this we can utilize some new features<code>data-repeat</code> attribute, <code>subscribe()</code> and <code>binds()</code> methods</p>
+        <p>Number of cats is all fun and games but what if we want a list of cats' names? To solve this we can utilize some new features: <code>data-repeat</code> attribute, <code>subscribe()</code> and <code>binds()</code> methods</p>
         <pre><code class="codebox html">&lt;input type="text" id="catNamesInput"></code></pre>
         <pre><code class="codebox javascript">const catNames = new Watchable("catNames");
 const catNamesList = new Watchable("catNamesList");
@@ -84,6 +84,7 @@ catNames.subscribe("addNames", () => catNamesList.set(catNames.value().split(" "
                 <li>Awaiting names</li>
             </div>
         </div>
+        <p>We are doing that the hard way. We can just add submit button or hit enter to push results to the <code>catNames</code> Watchable but instead we are using another feature <em>one-way binding.</em></p>
         <br><br><br>
 
 
