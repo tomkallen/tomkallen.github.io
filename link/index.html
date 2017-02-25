@@ -68,7 +68,22 @@ const addCats = () => catCounter.set(catCounter.value() + 1);</code></pre>
 If you do not want strict typing then omit 'type' argument and it will default to 'any'</code> <br> Try this in console on this page and this error will appear in the console <br> To avoid this do as error description says - just omit <em>type</em> in
             the constructor.
         </p>
-
+        <h3>5. Going further</h3>
+        <p>Number of cats is all fun and games but what if we want a list of cats' names? To solve this we can utilize some new features<code>data-repeat</code> attribute, <code>subscribe()</code> and <code>binds()</code> methods</p>
+        <pre><code class="codebox html">&lt;input type="text" id="catNamesInput"></code></pre>
+        <pre><code class="codebox javascript">const catNames = new Watchable("catNames");
+catNames.binds("catNamesInput");
+catNames.subscribe(()=>catNames.set(catNames.value().split(" ")));
+</code></pre>
+        <br>
+        <div class="result">
+            <p>Start typing cat names separated by space</p>
+            <input type="text" id="catNamesInput">
+            <div data-repeat="catNamesList">
+                <li></li>
+            </div>
+        </div>
+        <br><br><br>
 
 
 
@@ -82,6 +97,10 @@ If you do not want strict typing then omit 'type' argument and it will default t
             function addCats() {
                 return catCounter.set(catCounter.value() + 1)
             }
+            const catNames = new Watchable("catNames");
+            const catNamesList = new Watchable("catNamesList");
+            catNames.binds("catNamesInput");
+            catNames.subscribe("addNames", () => catNamesList.set(catNames.value().split(" ")));
         </script>
     </body>
 
