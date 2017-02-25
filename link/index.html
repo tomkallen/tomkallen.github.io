@@ -27,11 +27,11 @@
         <p>That is all you need to make library work. You do not need to initialize anything or put link to the bottom of the body.</p>
 
         <h3>2. Prepare your HTML</h3>
-        <p>Lets have some cats. We want our page to dispaly cats' names, their number and have an ability to add more cats!<br> We start from the most simple thing by adding a cats counter:</p>
+        <p>Lets have some cats. We want our page to dispaly cats' names, their number and have an ability to add more cats!<br> We start from the most simple thing by adding a cats' counter:</p>
         <pre>
 <code class="codebox html">&lt;p>Frankly speaking I have &lt;span data-watchable="catCounter">&lt;/span> cats!&lt;/p></code></pre>
-        <p>What you see above is a placeholder for your future Watchable instance. <em>data-watchable="counter"</em> means `watch variable which name attribute is set to "counter"` Note that we do not have anything inside of our &lt;span>. Actually nothing
-            is needed there but you can have anything inside that will be rendered until our Watchable is assigned to DOM, for example: `Loading data...` or whatever you wish.<br/>Now lets add our Javascript file where all the logic is set.</p>
+        <p>What you see above is a placeholder for your future Watchable instance. <em>data-watchable="catCounter"</em> means <em>watch variable with name parameter set to "catCounter"</em> Note that we do not have anything inside of our &lt;span>. Actually
+            nothing is needed there but you can have anything inside that will be rendered until our Watchable is assigned to DOM, for example: `Loading data...` or whatever you wish.<br/>Now lets add our Javascript file where all the logic is set.</p>
         <pre><code class="codebox html">&lt;head>
     &lt;script src="./path-to-link/bundle.min.js">&lt;/script>
     &lt;script src="index.js">&lt;/script>
@@ -58,7 +58,7 @@ catCounter.set(3);</code></pre>
 const addCats = () => catCounter.set(catCounter.value() + 1);</code></pre>
         <p>Try it yourself!</p>
         <div class="result">
-            <p>Frankly speaking i have <span data-watchable="catCounter"></span> cats!</p>
+            <p>Frankly speaking I have <span data-watchable="catCounter"></span> cats!</p>
             <button type="button" onclick="addCats()">Add more cats</button>
         </div>
         <p>See? Even the value in the Paragraph 3 has changed! All the elements that refer to the same Watchable are updated instantly.</p>
@@ -85,6 +85,8 @@ catNames.subscribe("addNames", () => catNamesList.set(catNames.value().split(" "
             </div>
         </div>
         <p>We are doing that the hard way. We can just add submit button or hit enter to push results to the <code>catNames</code> Watchable but instead we are using another feature <em>one-way binding.</em></p>
+        <p>We created <code>catNames</code> Watchable that stores everything we type in the input box <br> Then we made it bound to that input by passing its id: <br>
+            <code>catNames.binds("catNamesInput")</code> <br> Every time we change our input <code>catNames</code> is updated as it's connected to an input field. This is <em>one-way binding.</em></p>
         <br><br><br>
 
 
