@@ -1,0 +1,34 @@
+body {
+    font-family: 'PT Serif', serif;
+    padding: 1rem;
+}
+
+h1,
+h4 {
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+h3 {
+  padding: 0 4rem;
+  margin-bottom: 0;
+}
+
+.codebox {
+    margin: 0 auto;
+    width: 75%;
+    padding: .5rem 1rem;
+}
+
+.result {
+  margin: 0 auto;
+  padding: .5rem 1rem;
+  width: 75%;
+  background-color: #f6f6f0;
+}
+
+body > p {
+  padding: 0 4rem;
+  text-align: justify;
+}
